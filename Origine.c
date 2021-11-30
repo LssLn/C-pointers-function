@@ -33,7 +33,8 @@ int ricerca(t_studente archivio[], int dim, int (*confronta)(t_studente a, t_stu
     }
     return -1;
 }
-//typedef t_vettore(*t_puntatore_funzione)(t_vettore a, t_vettore b);
+//1
+typedef t_vettore(*t_puntatore_funzione)(t_vettore a, t_vettore b);
 int main(void) {
     float x = 10.0;
     float y = 20.0;
@@ -50,7 +51,7 @@ int main(void) {
     // voglio fare la ricerca
     ricerca(elenco, numero_elementi, confronta_matricola, a);
 }
-
+//2
 int main(void) {
     float * vettore = NULL; // Variabile puntatore da associare ad un vettore
 
